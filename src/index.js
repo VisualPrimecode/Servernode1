@@ -1,4 +1,6 @@
-import app from './app.js'
+const PORT = 3000;
+const HOST = '0.0.0.0'; // Asegúrate de que sea 0.0.0.0
 
-app.listen(3000)
-console.log("servidor iniciado")
+app.listen(PORT, HOST, () => {
+    console.log(`Servidor escuchando en http://${HOST}:${PORT}`);
+});
